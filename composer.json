@@ -1,0 +1,10 @@
+{
+    "name": "zfb/zfb-vm",
+    "description": "Code to set up a VM running Zend Framework 2",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "zend framework boilerplate",
+        "zf2"
+    ],
+    "homepage": "http://zf-boilerplate.com/"
+}
