@@ -50,7 +50,7 @@ you simply need to add another dependency in `composer.json`:
 
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "dev-master#18c8e223f070deb07c17543ed938b54542aa0ed8",
+        "zendframework/zendframework": "2.*",
         "zfb/zfb-vm": "dev-master"
     }
 
