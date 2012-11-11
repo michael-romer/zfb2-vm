@@ -56,6 +56,10 @@ package "php5-sqlite" do
   action :install
 end
 
+# PHP5-Intl needed by ZF2
+package "php5-intl" do
+  action :install
+end
 
 # Using PEAR installer
 
