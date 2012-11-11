@@ -95,6 +95,10 @@ execute "PEAR: install phd" do
   command "pear install -f --alldeps doc.php.net/phd"
 end
 
+execute "PEAR: install phpunit" do
+  command "pear install --alldeps phpunit/PHPUnit"
+end
+
 
 # Install xDebug
 php_pear "xdebug" do
