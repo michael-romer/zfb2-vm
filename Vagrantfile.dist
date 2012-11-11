@@ -9,6 +9,7 @@ Vagrant::Config.run do |config|
   config.vm.forward_port 3306, 3306
   config.ssh.max_tries = 50
   config.ssh.timeout   = 300
+  config.vm.share_folder("v-root", "/vagrant", ".", :owner => "www-data", :group => "www-data") 
   config.vm.provision :chef_solo do |chef|
      chef.cookbooks_path = "vendor/zfb/zfb-vm/cookbooks"
      chef.add_recipe("vagrant_main")
