@@ -56,5 +56,5 @@ you simply need to add another dependency in `composer.json`:
 
 Then, run `php composer.phar update`. After download is done, copy `Vagrantfile.dist` from `vendor/zfb/zfb-vm`
 to your application root folder and rename it from `Vagrantfile.dist` to `Vagrantfile`. In a shell, change
-to your application root folter and type `vagrant up`. Now the VM creation process is in progress (takes a while).
-Once done, sfire up a browser and point it to `http://localhost:8080`.
+to your application root folder and type `vagrant up`. Now the VM creation process is in progress (takes a while).
+Once done, fire up a browser and point it to `http://localhost:8080`.
