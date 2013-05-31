@@ -84,7 +84,7 @@ execute "PEAR: install phploc-1.5.0" do
 end
 
 execute "PECL: install xdebug" do
-  command "pecl install xdebug"
+  command "pecl install -f xdebug"
 end
 
 execute "PEAR: install phpcpd" do
@@ -100,7 +100,7 @@ execute "PEAR: install phd" do
 end
 
 execute "PEAR: install phpunit" do
-  command "pear install --alldeps phpunit/PHPUnit"
+  command "pear install -f --alldeps phpunit/PHPUnit"
 end
 
 
