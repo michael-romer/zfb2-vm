@@ -1,16 +1,16 @@
-require_recipe "apt"
-require_recipe "build-essential"
-require_recipe "networking_basic"
-require_recipe "apache2"
+include_recipe "apt"
+include_recipe "build-essential"
+include_recipe "networking_basic"
+include_recipe "apache2"
 include_recipe "apache2::mod_php5"
 include_recipe "apache2::mod_rewrite"
 include_recipe "apache2::mod_deflate"
 include_recipe "apache2::mod_headers"
-require_recipe "mysql::server"
-require_recipe "vagrant_main::custom_php"
-require_recipe "elasticsearch"
-require_recipe "ant"
-require_recipe "memcached"
+include_recipe "mysql::server"
+include_recipe "vagrant_main::custom_php"
+# include_recipe "elasticsearch"
+include_recipe "ant"
+include_recipe "memcached"
 
 # Install mysql gem
 gem_package "mysql" do
@@ -33,5 +33,5 @@ web_app "default" do
     template "default.conf.erb"
     server_name "localhost"
     server_aliases [node['fqdn'], "localhost"]
-    docroot "#{node[:vagrant][:directory]}/public"
+    docroot "/vagrant/public"
 end
